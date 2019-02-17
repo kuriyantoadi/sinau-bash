@@ -223,7 +223,7 @@ echo ""
 
   case $jwb16 in
   	"ls -l")
-      nil1=16
+      nil16=1
       echo "\033[1;32m   Jawaban anda benar\033[0m"
   		;;
   	*)
@@ -247,9 +247,9 @@ echo ""
   esac
 
 ## Soal nomor 18
-  echo "3. Untuk menghapus direktori dan isinya dengan perintah ? "
+  echo "18. Untuk menghapus direktori dan isinya dengan perintah ? "
   echo -n "   Jawaban : "
-  read jwb3
+  read jwb18
 
   case $jwb18 in
   	"rm -rf")
@@ -279,6 +279,7 @@ echo ""
 hasil1=$((nil1 + nil2 + nil3 + nil4 + nil5))
 hasil2=$((nil6 + nil7 + nil8 + nil9 + nil10 ))
 hasil3=$((nil11 + nil12 + nil13 + nil14 + nil15 ))
-hasil=$(($hasil1 + $hasil2 + $hasil3))
+hasil4=$((nil16 + nil17 + nil18 + nil19 ))
+hasil=$(($hasil1 + $hasil2 + $hasil3 + $hasil4))
 
 echo "Nilai anda dari menjawab \033[1;32mSoal Mudah\033[0m adalah" "\033[1;32m" $hasil "\033[0m"
