@@ -262,12 +262,12 @@ echo ""
   esac
 
 ## Soal nomor 19
-  echo "19. Untuk menghapus direktori dan isinya dengan perintah ? "
+  echo "19. Untuk melihat isi file text dengan perintah ? "
   echo -n "   Jawaban : "
   read jwb19
 
   case $jwb19 in
-  	"rm -rf")
+  	"cat")
       nil19=1
       echo "\033[1;32m   Jawaban anda benar\033[0m"
   		;;
@@ -276,10 +276,108 @@ echo ""
   		;;
   esac
 
+## Soal nomor 20
+  echo "20. Hapus direktori dengan satu baris perintah. /smk/tkj/ "
+  echo -n "   Jawaban : "
+  read jwb20
+
+  case $jwb20 in
+  	"rm -rf /smk/tkj/")
+      nil20=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+    "rm -rf /smk/tkj")
+      nil20=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+## Soal nomor 21
+  echo "21. Hapus file dengan satu baris perintah. /smk/tkj/tugas "
+  echo -n "   Jawaban : "
+  read jwb21
+
+  case $jwb21 in
+  	"rm /smk/tkj/tugas")
+      nil21=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+## Soal nomor 22
+  echo "22. Untuk membuat folder saya-belajar anda bisa memasukan perintah ?"
+  echo -n "   Jawaban : "
+  read jwb22
+
+  case $jwb22 in
+  	"mkdir saya-belajar")
+      nil22=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+## Soal nomor 23
+  echo "23. Untuk membuat folder  belajar-bash anda bisa memasukan perintah ?"
+  echo -n "   Jawaban : "
+  read jwb23
+
+  case $jwb23 in
+  	"mkdir belajar-bash")
+      nil23=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+## Soal nomor 24
+  echo "24. Untuk mengubah nama file tugas-sekolah menjadi tugas-bahasa dengan perintah"
+  echo -n "   Jawaban : "
+  read jwb24
+
+  case $jwb24 in
+  	"mv tugas-sekolah tugas-bahasa")
+      nil24=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+## Soal nomor 25
+  echo "25. Untuk memindah tugas-bash.sh ke folder tugas/sekolah ?"
+  echo -n "   Jawaban : "
+  read jwb25
+
+  case $jwb25 in
+  	"mv tugas-bash.sh tugas/sekolah")
+      nil25=1
+      echo "\033[1;32m   Jawaban anda benar\033[0m"
+  		;;
+  	*)
+      echo "\033[1;31m   Maaf jawaban anda salah\033[0m"
+  		;;
+  esac
+
+
 hasil1=$((nil1 + nil2 + nil3 + nil4 + nil5))
 hasil2=$((nil6 + nil7 + nil8 + nil9 + nil10 ))
 hasil3=$((nil11 + nil12 + nil13 + nil14 + nil15 ))
-hasil4=$((nil16 + nil17 + nil18 + nil19 ))
-hasil=$(($hasil1 + $hasil2 + $hasil3 + $hasil4))
+hasil4=$((nil16 + nil17 + nil18 + nil19 + nil20 ))
+hasil5=$((nil21 + nil22 + nil23 + nil24 + nil25 ))
+hasilA=$(($hasil1 + $hasil2 + $hasil3))
+hasilB=$(($hasil4 + $hasil5))
+hasil=$(($hasilA + $hasilB))
 
-echo "Nilai anda dari menjawab \033[1;32mSoal Mudah\033[0m adalah" "\033[1;32m" $hasil "\033[0m"
+echo "Nilai anda dari menjawab \033[1;32mSoal Mudah\033[0m adalah \033[1;32m" $hasil "\033[0m"
