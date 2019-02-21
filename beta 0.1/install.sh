@@ -1,7 +1,11 @@
+#!/usr/bin/env bash
+
+#waktu mulai
+mulai=`date +%s`
+
+source template/nama.sh
 source fungsi-asli.sh
 source case.sh
-
-waktu_krj=`date +%H:%M:%S`;
 
 hasil1=$((nil1 + nil2 + nil3 + nil4 + nil5))
 hasil2=$((nil6 + nil7 + nil8 + nil9 + nil10 ))
@@ -18,5 +22,10 @@ hasilB=$(($hasil4 + $hasil5 + $hasil6))
 hasilC=$(($hasil7 + $hasil8 + $hasil9 + $hasil10))
 hasil=$(($hasilA + $hasilB + $hasilC))
 
-echo "Waktu di yang di selesaikan: " $waktu_krj
+#waktu selesai
+selesai=`date +%s`
+
+echo -e "Waktu anda untuk menyelesaikan soal adalah \033[1;32m $(($selesai-$mulai)) detik \033[0m"
 echo -e "Nilai anda dari menjawab \033[1;32mSoal Mudah\033[0m adalah \033[1;32m" $hasil "\033[0m"
+
+source template/template.sh
