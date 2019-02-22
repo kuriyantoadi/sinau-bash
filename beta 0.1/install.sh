@@ -1,31 +1,54 @@
-#!/usr/bin/env bash
+#! /bin/bash
+clear
 
-#waktu mulai
-mulai=`date +%s`
+#echo -e "\033[1;31m MERAH\033[0m"
+#echo -e "\033[1;32m HIJAU\033[0m"
 
-source template/nama.sh
-source fungsi-asli.sh
-source case.sh
+echo -e "\033[1;32m  _____  _                           \033[0m \033[1;31m ____            _      \033[0m  "
+echo -e "\033[1;32m / ____|(_)                          \033[0m \033[1;31m|  _ \          | |     \033[0m "
+echo -e "\033[1;32m| (___  _ _ __   __ _ _   _   _____  \033[0m \033[1;31m| |_) | __ _ ___| |__   \033[0m"
+echo -e "\033[1;32m \___ \| | '_ \ / _' | | | | |_____| \033[0m \033[1;31m|  _ < / _' / __| '_ \  \033[0m "
+echo -e "\033[1;32m ____) | | | | | (_| | |_| |         \033[0m \033[1;31m| |_) | (_| \__ \ | | | \033[0m"
+echo -e "\033[1;32m|_____/|_|_| |_|\__,_|\__,_|         \033[0m \033[1;31m|____/ \__,_|___/_| |_| \033[0m"
+echo ""
+echo "Daftar dulu Bos..."
+echo ""
+#echo "#########################################################################"
+#echo "# 	                 Form Daftar Nama Peserta                          #"
+#echo "#                                                                      #"
+#echo "########################################################################"
 
-hasil1=$((nil1 + nil2 + nil3 + nil4 + nil5))
-hasil2=$((nil6 + nil7 + nil8 + nil9 + nil10 ))
-hasil3=$((nil11 + nil12 + nil13 + nil14 + nil15 ))
-hasil4=$((nil16 + nil17 + nil18 + nil19 + nil20 ))
-hasil5=$((nil21 + nil22 + nil23 + nil24 + nil25 ))
-hasil6=$((nil26 + nil27 + nil28 + nil29 + nil30 ))
-hasil7=$((nil31 + nil32 + nil33 + nil34 + nil35 ))
-hasil8=$((nil36 + nil37 + nil38 + nil39 + nil40 ))
-hasil9=$((nil41 + nil42 + nil43 + nil44 + nil45 ))
-hasil10=$((nil46 + nil47 + nil48 + nil49 + nil50 ))
-hasilA=$(($hasil1 + $hasil2 + $hasil3))
-hasilB=$(($hasil4 + $hasil5 + $hasil6))
-hasilC=$(($hasil7 + $hasil8 + $hasil9 + $hasil10))
-hasil=$(($hasilA + $hasilB + $hasilC))
+#Input nama Peserta
+lagi1='y'  #variabel
+while  [ $lagi1 == 'y' ];
+do
+  echo -n "Nama Peserta         : ";
+  read nama
 
-#waktu selesai
-selesai=`date +%s`
+  if [ -z "$nama" ]
+  then
+    lagi1=y
+    echo "Maaf Nama anda harus anda isi"
+  else
 
-echo -e "Waktu anda untuk menyelesaikan soal adalah \033[1;32m $(($selesai-$mulai)) detik \033[0m"
-echo -e "Nilai anda dari menjawab \033[1;32mSoal Mudah\033[0m adalah \033[1;32m" $hasil "\033[0m"
+    #Input Alasan Peserta
+    lagi2='y'  #variabel
+    while  [ $lagi2 == 'y' ];
+    do
+      echo -n "Alasan Mengikuti     : ";
+      read alasan
 
-source template/template.sh
+      if [ -z "$alasan" ]
+      then
+        lagi=y
+        echo "Maaf alasan anda harus anda isi"
+      else
+        source base.sh
+        exit 1
+      fi
+
+    done # input alasan peserta
+
+  fi
+
+done # input nama peserta
