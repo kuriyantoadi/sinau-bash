@@ -7,45 +7,40 @@ echo -e "\033[1;32m \___ \| | '_ \ / _' | | | | |_____| \033[0m \033[1;31m|  _ <
 echo -e "\033[1;32m ____) | | | | | (_| | |_| |         \033[0m \033[1;31m| |_) | (_| \__ \ | | | \033[0m"
 echo -e "\033[1;32m|_____/|_|_| |_|\__,_|\__,_|         \033[0m \033[1;31m|____/ \__,_|___/_| |_| \033[0m"
 echo ""
-echo "Tenang mas patick"
-echo "Ini soal mudah mas patrick . . ."
+echo "Jangan takut mas patrick"
+echo "Di jawab dengan santuy mas patrick"
 echo ""
 
 function soal1() {
-
   echo ""
-  echo "Untuk melihat isi file dalam sebuah direktori dengan perintah ? "
+  echo "Hapus file dengan perintah /smk/tkj/tugas "
   echo -n "   Jawaban : "
   read jwb1
 
   case $jwb1 in
-    "ls")
+    "rm /smk/tkj/tugas")
       nil1=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "   ls"
       ;;
   esac
-
 }
 
 function soal2() {
-
   echo ""
-  echo "Untuk masuk kedalam direktori dengan perintah ? "
+  echo "Untuk membuat folder saya-belajar anda bisa memasukan perintah ?"
   echo -n "   Jawaban : "
   read jwb2
 
   case $jwb2 in
-    "cd")
+    "mkdir saya-belajar")
       nil2=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "cd"
       ;;
   esac
 
@@ -54,18 +49,17 @@ function soal2() {
 function soal3() {
 
   echo ""
-  echo "Untuk mengecek posisi di direktori mana dengan perintah ? "
+  echo "Untuk membuat folder  belajar-bash anda bisa memasukan perintah ?"
   echo -n "   Jawaban : "
   read jwb3
 
   case $jwb3 in
-    "pwd")
+    "mkdir belajar-bash")
       nil3=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "pwd"
       ;;
   esac
 
@@ -74,18 +68,17 @@ function soal3() {
 function soal4() {
 
   echo ""
-  echo "Untuk mengubah nama file dengan perintah ? "
+  echo "Untuk mengubah nama file tugas-sekolah menjadi tugas-bahasa dengan perintah"
   echo -n "   Jawaban : "
   read jwb4
 
   case $jwb4 in
-    "mv")
+    "mv tugas-sekolah tugas-bahasa")
       nil4=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "mv"
       ;;
   esac
 }
@@ -93,18 +86,17 @@ function soal4() {
 function soal5() {
 
   echo ""
-  echo "Untuk mengubah nama folder dengan perintah ? "
+  echo "Untuk memindah file tugas-bash.sh ke folder tugas/sekolah ?"
   echo -n "   Jawaban : "
   read jwb5
 
   case $jwb5 in
-    "mv")
+    "mv tugas-bash.sh tugas/sekolah")
       nil5=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "mv"
       ;;
   esac
 
@@ -113,19 +105,17 @@ function soal5() {
 function soal6() {
 
   echo ""
-  echo "Untuk menghapus file dengan perintah ? "
+  echo "Perintah mengubah hak akses untuk eksekusi tugas-bash.sh bisa di jalankan secara Symbolic ?"
   echo -n "   Jawaban : "
   read jwb6
 
   case $jwb6 in
-    "rm")
+    "chmod +x tugas-bash.sh")
       nil6=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
-      echo -e
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "rm"
       ;;
   esac
 
@@ -134,18 +124,17 @@ function soal6() {
 function soal7() {
 
   echo ""
-  echo "Untuk membuat folder baru dengan perintah ? "
+  echo "Untuk melihat isi dalam directory beserta hak akses nya ?"
   echo -n "   Jawaban : "
   read jwb7
 
   case $jwb7 in
-    "mkdir")
+    "ls -l")
       nil7=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "mkdir"
       ;;
   esac
 }
@@ -153,18 +142,17 @@ function soal7() {
 function soal8() {
 
   echo ""
-  echo "Untuk melakukan remote ssh dengan perintah ? "
+  echo "Simbol ketika perintah (ls -l) untuk directory adalah ?"
   echo -n "   Jawaban : "
   read jwb8
 
   case $jwb8 in
-    "ssh")
+    "d")
       nil8=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo "ssh"
       ;;
   esac
 }
@@ -172,18 +160,17 @@ function soal8() {
 function soal9() {
 
   echo ""
-  echo "Untuk menambah user baru dengan perintah ? "
+  echo "Perintah untuk mematikan komputer pada terminal ?"
   echo -n "   Jawaban : "
   read jwb9
 
   case $jwb9 in
-    "adduser")
+    "poweroff")
       nil9=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "adduser"
       ;;
   esac
 
@@ -192,18 +179,17 @@ function soal9() {
 function soal10() {
 
   echo ""
-  echo "Untuk mengecek siapa yang login dengan perintah ? "
+  echo "Perintah untuk membuat File Text?"
   echo -n "    Jawaban : "
   read jwb10
 
   case $jwb10 in
-    "who")
+    "touch")
       nil10=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "who"
       ;;
   esac
 
@@ -212,18 +198,17 @@ function soal10() {
 function soal11() {
 
   echo ""
-  echo "Untuk mengopy file dengan perintah ? "
+  echo "Perintah untuk melihat tanggal ?"
   echo -n "    Jawaban : "
   read jwb11
 
   case $jwb11 in
-    "cp")
+    "date")
       nil11=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "cp"
       ;;
   esac
 
@@ -232,18 +217,17 @@ function soal11() {
 function soal12() {
 
   echo ""
-  echo "Untuk mengarsip file menjadi zip dengan perintah ? "
+  echo "Perintah untuk menjalankan format .bin pada Linux ?"
   echo -n "     Jawaban : "
   read jwb12
 
   case $jwb12 in
-    "zip")
+    "./")
       nil12=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "zip"
       ;;
   esac
 }
@@ -251,18 +235,17 @@ function soal12() {
 function soal13() {
 
   echo ""
-  echo "Untuk membuka file zip dengan perintah ? "
+  echo "Perintah Untuk membuat group baru pada Linux ?"
   echo -n "    Jawaban : "
   read jwb13
 
   case $jwb13 in
-    "unzip")
+    "addgroup")
       nil13=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo "unzip"
       ;;
   esac
 
@@ -271,18 +254,17 @@ function soal13() {
 function soal14() {
 
   echo ""
-  echo "Untuk mengubah hak akses dengan perintah ? "
+  echo "Perintah untuk Memberikan HAK AKSES penuh user,group dan other pada file ?"
   echo -n "    Jawaban : "
   read jwb14
 
   case $jwb14 in
-    "chmod")
+    "chmod 777")
       nil14=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo "chmod"
       ;;
   esac
 }
@@ -290,18 +272,17 @@ function soal14() {
 function soal15() {
 
   echo ""
-  echo "Untuk mengubah pemilikan file atau grup dengan perintah ? "
+  echo "Perintah untuk melihat isi file secara step by step ?"
   echo -n "    Jawaban : "
   read jwb15
 
   case $jwb15 in
-    "chown")
+    "more")
       nil15=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "chown"
       ;;
   esac
 }
@@ -309,18 +290,17 @@ function soal15() {
 function soal16() {
 
   echo ""
-  echo "Untuk melihat isi file dalam sebuah direktori dengan banyak format dengan perintah ? "
+  echo "Perintah untuk menginstall package .deb ?"
   echo -n "   Jawaban : "
   read jwb16
 
   case $jwb16 in
-    "ls -l")
+    "dpkg -i")
       nil16=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "ls -l"
       ;;
   esac
 }
@@ -329,18 +309,21 @@ function soal16() {
 function soal17() {
 
   echo ""
-  echo "Untuk mencopy direktori dan isinya dengan perintah ? "
+  echo "Untuk melihat IP Address ?"
   echo -n "    Jawaban : "
   read jwb17
 
   case $jwb17 in
-    "cp -r")
+    "ifconfig")
+      nil17=1
+      echo -e "\033[1;32m   Jawaban anda benar\033[0m"
+      ;;
+    "ip a")
       nil17=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "cp -r"
       ;;
   esac
 }
@@ -348,18 +331,17 @@ function soal17() {
 function soal18() {
 
   echo ""
-  echo "Untuk menghapus direktori dan isinya dengan perintah ? "
+  echo "Untuk mengetahui Bash berjalan pada Linux"
   echo -n "   Jawaban : "
   read jwb18
 
   case $jwb18 in
-    "rm -rf")
+    "ps")
       nil18=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
-      echo -e "rm -rf"
       ;;
   esac
 }
@@ -367,12 +349,12 @@ function soal18() {
 function soal19() {
 
   echo ""
-  echo "Untuk melihat isi file text dengan perintah ? "
+  echo "Perintah berpindah ke user ROOT ?"
   echo -n "   Jawaban : "
   read jwb19
 
   case $jwb19 in
-    "cat")
+    "sudo su")
       nil19=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
@@ -386,19 +368,15 @@ function soal19() {
 function soal20() {
 
   echo ""
-  echo "Hapus direktori dengan satu baris perintah. /smk/tkj/ "
+  echo "Untuk keluar dari super user / root pada terminal ?"
   echo -n "   Jawaban : "
   read jwb20
 
   case $jwb20 in
-    "rm -rf /smk/tkj/")
+    "exit")
       nil20=1
       echo -e "\033[1;32m   Jawaban anda benar\033[0m"
       ;;
-    "rm -rf /smk/tkj")
-      nil20=1
-      echo -e "\033[1;32m   Jawaban anda benar\033[0m"
-  		;;
     *)
       echo -e "\033[1;31m   Maaf jawaban anda salah\033[0m"
       echo -e "rm -rf /smk/tkj"

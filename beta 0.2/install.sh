@@ -12,13 +12,8 @@ echo -e "\033[1;32m ____) | | | | | (_| | |_| |         \033[0m \033[1;31m| |_) 
 echo -e "\033[1;32m|_____/|_|_| |_|\__,_|\__,_|         \033[0m \033[1;31m|____/ \__,_|___/_| |_| \033[0m"
 echo ""
 echo "Daftar dulu Bos..."
-echo "Tenang ini sesi mudah ko . . ."
+echo "Selamat berjuang bos ku . . ."
 echo ""
-#echo "#########################################################################"
-#echo "# 	                 Form Daftar Nama Peserta                          #"
-#echo "#                                                                      #"
-#echo "#####################################################
-###################"
 
 #Input nama Peserta
 lagi1='y'  #variabel
